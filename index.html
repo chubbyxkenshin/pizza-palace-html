@@ -9,6 +9,10 @@
   <body>
     <h1>Build Your Dream Pizza!</h1>
     <form>
+      <h3>Contact Details</h3>
+
+      <hr />
+
       <div>
         <div>
           <label for="name">Name</label>
@@ -36,21 +40,37 @@
         </div>
       </div>
 
+      <h3>Select pizza size</h3>
+
+      <hr />
+
       <div>
         <div>
-          <input type="radio" id="small" />
+          <input type="radio" id="small" name="pizza_size" />
           <label for="small">Small</label>
         </div>
 
         <div>
-          <input type="radio" id="medium" />
+          <input type="radio" id="medium" name="pizza_size" />
           <label for="medium">Medium</label>
         </div>
 
         <div>
-          <input type="radio" id="large" />
+          <input type="radio" id="large" name="pizza_size" />
           <label for="large">Large</label>
         </div>
+      </div>
+
+      <h3>Select crust type</h3>
+
+      <hr />
+
+      <div>
+        <select name="crust_type">
+          <option>Thin</option>
+          <option>Regular</option>
+          <option>Stuffed</option>
+        </select>
       </div>
     </form>
   </body>
